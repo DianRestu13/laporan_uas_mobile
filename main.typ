@@ -6,7 +6,7 @@
 #let members_data = (
   (name: "Danish Naisyila Azka", nim: "362458302098", role: "Backend Architect"), // [cite: 23]
   (name: "Dian Restu Khoirunnisa", nim: "362458302094", role: "UI Engineer"),       // [cite: 28]
-  (name: "Vina Faizatus Sofita", nim: "362458302094", role: "Auth & Navigation"), // [cite: 33]
+  (name: "Vina Faizatus Sofita", nim: "362458302095", role: "Auth & Navigation"), // [cite: 33]
   (name: "Nadhifah Afiyah Qurota'ain", nim: "362458302100", role: "Transaction Logic"), // [cite: 37]
 )
 

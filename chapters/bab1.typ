@@ -1,23 +1,58 @@
 = Pendahuluan & Pembagian Kerja
 
 == Deskripsi Aplikasi
-Aplikasi Smart E-Kantin ini dibangun menggunakan Flutter dengan arsitektur yang memisahkan logic, UI, dan backend services.
+Aplikasi CineBooking adalah sistem pemesanan tiket bioskop berbasis mobile yang dibangun menggunakan Flutter. Aplikasi ini memungkinkan pengguna untuk melihat daftar film, memilih kursi, dan melakukan booking secara real-time dengan integrasi Firebase sebagai backend.
 
-== Tabel Pembagian Tanggung Jawab
-Berikut adalah detail pembagian tugas sesuai instruksi ujian:
+Fitur utama aplikasi:
+- Autentikasi pengguna (Login & Register)
+- Daftar film dengan informasi detail
+- Pemilihan kursi interaktif
+- Sistem booking dengan QR Code
+- Riwayat transaksi pengguna
+- Perhitungan harga otomatis dengan diskon kursi genap
 
-== Tabel Pembagian Tanggung Jawab (sementara)
+== Teknologi yang Digunakan
+- *Framework*: Flutter
+- *Backend*: Firebase (Authentication, Firestore)
+- *State Management*: Provider
+- *Database*: Cloud Firestore
+- *Version Control*: Git
 
-Berikut adalah ringkasan pembagian tugas (sementara) yang dapat diperbaiki nanti:
+== Pembagian Tugas Tim
 
-*Anggota 1*: Backend — Firebase Setup, Data Seeding — (inisial: ani)
+#table(
+  columns: (auto, auto, auto),
+  align: (left, left, left),
+  [*Nama*], [*NIM*], [*Peran*],
+  [Danish Naisyila Azka], [362458302098], [Backend Architect],
+  [Dian Restu Khoirunnisa], [362458302094], [UI Engineer],
+  [Vina Faizatus Sofita], [362458302094], [Auth & Navigation],
+  [Nadhifah Afiyah Qurota'ain], [362458302100], [Transaction Logic],
+)
 
-*Anggota 2*: UI Engineer — Slicing Login & Home — (inisial: budi)
+=== Detail Tanggung Jawab
 
-*Anggota 3*: Auth & Nav — Login Logic & Routing — (inisial: citra)
+*Azka (Backend Architect)*:
+- Setup Firebase dan konfigurasi project
+- Membuat model data (MovieModel, UserModel, BookingModel)
+- Implementasi FirebaseService untuk CRUD operations
+- Integrasi database Firestore
 
-*Anggota 4*: Logic — Cart State & Discount — (inisial: dani)
+*Dian (UI Engineer)*:
+- Desain dan implementasi HomeScreen
+- Membuat MovieCard widget
+- Implementasi MovieDetailScreen
+- Styling dan theming aplikasi
 
-*Anggota 5*: QA Lead — Testing & Merge — (inisial: eka)
+*Vina (Auth & Navigation)*:
+- Implementasi LoginScreen dan RegisterScreen
+- Handling autentikasi Firebase
+- Setup routing dan navigation
+- Membuat SeatSelectionScreen
 
-// TODO: restore as a proper `table(...)` once parsing issues are resolved
+*Nadif (Transaction Logic)*:
+- Implementasi BookingController dengan Provider
+- Logika pemilihan kursi dan validasi
+- Sistem perhitungan harga dan diskon
+- ProfileScreen dengan QR Code booking
+- CalculationService untuk business logic
